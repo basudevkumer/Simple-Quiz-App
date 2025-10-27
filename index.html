@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      style="background-image: url(images/si-fi3.png)"
+      class="bg-cover bg-center bg-no-repeat after:absolute after:top-0 after:content-[''] after:w-full after:h-full after:bg-[#00000023] z-0"
+    >
+      <div class="w-[1320px] mx-auto">
+        <div class="w-full h-[100vh] flex justify-center items-center">
+          <div
+            class="quizBox bg-white/30 backdrop-blur-sm p-20 rounded z-10 relative"
+          >
+            <h2 id="question" class="text-3xl font-bold text-center"></h2>
+            <div
+              id="option"
+              class="grid grid-cols-2 gap-7 mt-8 text-lg font-medium w-fit mx-auto"
+            ></div>
+            <div class="mt-8 flex justify-center items-center gap-x-5">
+              <button
+                id="nxtBtn"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 cursor-pointer"
+                disabled
+              >
+                Next
+              </button>
+              <button
+                id="reset"
+                class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 cursor-pointer"
+              >
+                Reset
+              </button>
+            </div>
+            <div class="absolute bottom-5 right-10">
+              <p id="countNumber" class="text-lg "></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
